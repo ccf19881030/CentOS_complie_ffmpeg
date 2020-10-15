@@ -4,8 +4,7 @@ Compile FFmpeg on CentOS
 This guide is based on a minimal installation of the latest CentOS release, and will provide a local, non-system installation of FFmpeg with support for several common external encoding libraries. These instructions should also work for recent Red Hat Enterprise Linux (RHEL) and Fedora.
 
 ## 一、CentOs7下编译FFMpeg相关资料
-   找到一篇关于在CentOS7下编译FFMPEG源代码的文章，地址为：[Compile FFmpeg on CentOS](https://trac.ffmpeg.org/wiki/CompilationGuide/Centos)
-有需要的话可以跟着做一下。另外，像编译ffmpeg源代码所需要的一些解码库x264,x265,libvpx等软件源代码包的下载，可以直接从[www.linuxfromscratch.org](http://www.linuxfromscratch.org/blfs/view/svn/index.html)上面下载
+   找到一篇关于在CentOS7下编译FFMPEG源代码的文章，地址为：[Compile FFmpeg on CentOS](https://trac.ffmpeg.org/wiki/CompilationGuide/Centos)，有需要的话可以跟着做一下。另外，像编译ffmpeg源代码所需要的一些解码库x264,x265,libvpx等软件源代码包的下载，可以直接从[www.linuxfromscratch.org](http://www.linuxfromscratch.org/blfs/view/svn/index.html)上面下载
 在Linux使用源代码安装软件时，有时候需要安装对应的依赖，从[http://www.linuxfromscratch.org/blfs/view/svn/index.html](http://www.linuxfromscratch.org/blfs/view/svn/index.html)这上面下载对应的软件源代码十分方便。
 
 ## 二、CentOS7下编译和安装ffmpeg以及相关依赖库的脚本
@@ -15,7 +14,7 @@ This guide is based on a minimal installation of the latest CentOS release, and 
 yum install autoconf automake bzip2 bzip2-devel cmake freetype-devel gcc gcc-c++ git libtool make mercurial pkgconfig zlib-devel
 ```
 
-### 2、一键式`Shell`编译脚本`build_ffmpeg_all.sh`
+### 2、一键式Shell编译脚本build_ffmpeg_all.sh
 编译脚本如下：
 ```shell
 # install required software package

@@ -20,6 +20,7 @@ This guide is designed to be non-intrusive and will create several directories i
 - ffmpeg_sources – Where the source files will be downloaded. This can be deleted if desired when finished with the guide.
 - ffmpeg_build – Where the files will be built and libraries installed. This can be deleted if desired when finished with the guide.
 - bin – Where the resulting binaries (ffmpeg, ffprobe, x264, x265) will be installed.
+
 为了方便，我对脚本做了一些修改，在`build_ffmpeg_all.sh`脚本中增加了一个变量`INSTALL_PATH`，用于指定软件的安装目录，我设置成了`/usr/local`，当然可以根据自己的需要进行修改。
 
 编译脚本如下：

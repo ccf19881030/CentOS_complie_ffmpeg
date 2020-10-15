@@ -1,4 +1,4 @@
-# centOS_build_ffmpeg
+# centOS_complie_ffmpeg
 Compile FFmpeg on CentOS7
 
 This guide is based on a minimal installation of the latest CentOS release, and will provide a local, non-system installation of FFmpeg with support for several common external encoding libraries. These instructions should also work for recent Red Hat Enterprise Linux (RHEL) and Fedora.

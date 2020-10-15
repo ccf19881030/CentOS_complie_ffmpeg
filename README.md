@@ -5,15 +5,7 @@ This guide is based on a minimal installation of the latest CentOS release, and 
 
 ## 一、CentOs7下编译FFMpeg相关资料
    找到一篇关于在CentOS7下编译FFMPEG源代码的文章，地址为：[Compile FFmpeg on CentOS](https://trac.ffmpeg.org/wiki/CompilationGuide/Centos)
-   ![Compile FFmpeg on CentOS](https://img-blog.csdnimg.cn/2020101415164324.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NjZjE5ODgxMDMw,size_16,color_FFFFFF,t_70#pic_center)
-有需要的话可以跟着做一下。另外，像编译ffmpeg源代码所需要的一些解码库x264,x265,libvpx等软件源代码包的下载，可以直接从[www.linuxfromscratch.org](http://www.linuxfromscratch.org/blfs/view/svn/index.html)上面下载，如下图所示：
-![linuxfromscratch](https://img-blog.csdnimg.cn/20201014171234332.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NjZjE5ODgxMDMw,size_16,color_FFFFFF,t_70#pic_center)
-
-![Video and Audio Utilities](https://img-blog.csdnimg.cn/20201014172442152.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NjZjE5ODgxMDMw,size_16,color_FFFFFF,t_70#pic_center)
-
-![libvpx-1.9.0](https://img-blog.csdnimg.cn/20201014171333911.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NjZjE5ODgxMDMw,size_16,color_FFFFFF,t_70#pic_center)
-![x265-3.4](https://img-blog.csdnimg.cn/20201014171412422.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NjZjE5ODgxMDMw,size_16,color_FFFFFF,t_70#pic_center)
-![x264-20200819](https://img-blog.csdnimg.cn/20201014171443742.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NjZjE5ODgxMDMw,size_16,color_FFFFFF,t_70#pic_center)
+有需要的话可以跟着做一下。另外，像编译ffmpeg源代码所需要的一些解码库x264,x265,libvpx等软件源代码包的下载，可以直接从[www.linuxfromscratch.org](http://www.linuxfromscratch.org/blfs/view/svn/index.html)上面下载
 在Linux使用源代码安装软件时，有时候需要安装对应的依赖，从[http://www.linuxfromscratch.org/blfs/view/svn/index.html](http://www.linuxfromscratch.org/blfs/view/svn/index.html)这上面下载对应的软件源代码十分方便。
 
 ## 二、CentOS7下编译和安装ffmpeg以及相关依赖库的脚本

@@ -15,6 +15,13 @@ yum install autoconf automake bzip2 bzip2-devel cmake freetype-devel gcc gcc-c++
 ```
 
 ### 2、一键式Shell编译脚本build_ffmpeg_all.sh
+[Compile FFmpeg on CentOS](https://trac.ffmpeg.org/wiki/CompilationGuide/Centos)原文是将所有下载的ffmpeg依赖包源代码统一放置到`~/ffmpeg_sources`目录下，将中间的库文件放置到`~/ffmpeg_build`目录下，最终生成的二进制文件放在`~/bin`目录下。正如下面描述的仪啊杨那个：
+This guide is designed to be non-intrusive and will create several directories in your home directory:
+- ffmpeg_sources – Where the source files will be downloaded. This can be deleted if desired when finished with the guide.
+- ffmpeg_build – Where the files will be built and libraries installed. This can be deleted if desired when finished with the guide.
+- bin – Where the resulting binaries (ffmpeg, ffprobe, x264, x265) will be installed.
+为了方便，我对脚本做了一些修改，在`build_ffmpeg_all.sh`脚本中增加了一个变量`INSTALL_PATH`，用于指定软件的安装目录，我设置成了`/usr/local`，当然可以根据自己的需要进行修改。
+
 编译脚本如下：
 ```shell
 # install required software package

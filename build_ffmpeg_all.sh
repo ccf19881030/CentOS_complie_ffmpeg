@@ -100,6 +100,16 @@ cd libvpx-1.9.0
 make
 make install
 
+# sdl
+# for ffplay binary, build and install sdl libary
+cd ~/ffmpeg_sources
+wget http://libsdl.org/release/SDL-1.2.15.tar.gz
+tar zxvf SDL-1.2.15.tar.gz
+cd SDL-1.2.15
+./configure --prefix=/usr/local
+sudo make
+sudo make install
+
 # build and install FFmpeg
 cd ~/ffmpeg_sources
 curl -O -L https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2
